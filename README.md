@@ -1,9 +1,15 @@
 ## Hi there 👋
 
-<!--
+
 **socks5-sniffer/socks5-sniffer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-# 🏗️ After the military and construction bet me up, I am hanging my tool belt up for some lumbar support and a cool coffee mug.  Newly budding dveloper with an interest in security.  I started out curious on how passwords were salted/ hashed and...well I kept reading.  genAI is helping me through the giant hurdles that held me back from learing to code before, and I am so thankful for it.  Reach out at let me know what I am doing wrong and I will thank you big!
+# 🏗️ After the military and construction bet me up, I am hanging my tool belt up for some lumbar support and a cool coffee mug.  
+
+Newly budding dveloper with an interest in security.  I started out curious on how passwords were salted/ hashed and...well I kept reading.  
+
+genAI is helping me through the giant hurdles that held me back from learing to code before, and I am so thankful for it.  
+
+Reach out at let me know what I am doing wrong and I will thank you big!
 
 
 
@@ -23,8 +29,10 @@ The project uses tools like Dependabot to watch for vulnerable packages.
 Protected Workflow:
 Important branches require reviews before merging to prevent unwanted changes.
 
+
 ## 🛠️ Tech Stack
 
+* **Linux/ Win
 * **Server:** Apache
 * **Database:** PostgrSQL
 * **Languages:** Python / PHP / HTML
@@ -39,7 +47,7 @@ Important branches require reviews before merging to prevent unwanted changes.
 
 ## 🚀 Getting Started
 
-- 🔭 I’m currently working on... 3 personal apps with genAI, 2 websites, and a raspberry pi powered automatic fish feeder, that is also my private home web server.
+- 🔭 I’m currently working on... 3 personal apps with genAI, 2 websites, and a raspberry pi powered automatic fish feeder, that is also my private home server.
 - 🌱 I’m currently learning ...genAI Leaders / Cyber Security courses by Google, Python, HTML, PHP, and 3d printers.
 - 👯 I’m looking to collaborate on ...small projects centered around security features and fun D.I.Y. projects.
 - 🤔 I’m looking for help with ...sound advice for a 40 y.o. man changing carreers at a time like this.
