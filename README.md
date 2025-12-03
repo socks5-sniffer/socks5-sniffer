@@ -3,7 +3,7 @@
 
 **socks5-sniffer/socks5-sniffer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-# 🏗️ After the military and construction bet me up, I am hanging my tool belt up for some lumbar support and a cool coffee mug.  
+# 🏗️ After the military and construction beat me up, I am hanging my tool belt up for some lumbar support and a cool coffee mug.  
 
 Newly budding dveloper with an interest in security.  I started out curious on how passwords were salted/ hashed and...well I kept reading.  
 
