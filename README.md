@@ -5,7 +5,7 @@
 
 # 🏗️ After the military and construction beat me up, I am hanging my tool belt up for some lumbar support and a cool coffee mug.  
 
-Newly budding dveloper with an interest in security.  I started out curious on how passwords were salted/ hashed and...well I kept reading.  
+Newly budding developer with an interest in security.  I started out curious on how passwords were salted/ hashed and...well I kept reading.  
 
 genAI is helping me through the giant hurdles that held me back from learing to code before, and I am so thankful for it.  
 
