@@ -41,9 +41,52 @@ Important branches require reviews before merging to prevent unwanted changes.
 
 ## ✨ Features
 
-* Password Hash, Salt & Pepper
+* Password Hash, Salt & Pepper - **[Implementation Available](PASSWORD_SECURITY.md)**
 * Utilize Argon2id
 * 1 man DevSecOps
+
+## 🔐 Password Pepper Implementation
+
+This repository now includes a complete implementation of secure password storage using **pepper + salt + hash** with Argon2id!
+
+### What's Included:
+- **`password_utils.py`** - Core password hashing with pepper support
+- **`db_manager.py`** - Database operations with PostgreSQL
+- **`database_schema.sql`** - Database schema for user credentials
+- **`example_app.py`** - Interactive CLI demo application
+- **`test_password_utils.py`** - Comprehensive unit tests
+- **`PASSWORD_SECURITY.md`** - Complete security documentation
+
+### Quick Start:
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Generate a secure pepper
+python -c "import secrets; print(secrets.token_hex(32))"
+
+# 3. Configure environment
+cp .env.example .env
+# Edit .env with your database credentials and pepper
+
+# 4. Set up database
+psql -U postgres -d your_database -f database_schema.sql
+
+# 5. Run the demo
+python example_app.py
+
+# 6. Run tests
+python test_password_utils.py
+```
+
+### Security Features:
+- ✅ **Pepper**: Global secret key (not stored in database)
+- ✅ **Salt**: Unique per-password (prevents rainbow tables)
+- ✅ **Argon2id**: Memory-hard hashing (GPU-resistant)
+- ✅ **Defense-in-depth**: Multiple layers of protection
+- ✅ **Prepared statements**: SQL injection prevention
+
+For detailed documentation, see **[PASSWORD_SECURITY.md](PASSWORD_SECURITY.md)**
 
 ## 🚀 Getting Started
 
