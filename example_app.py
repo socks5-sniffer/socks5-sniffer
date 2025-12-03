@@ -240,7 +240,7 @@ def generate_pepper_cli():
     print(f"\nGenerated secure pepper (256 bits):")
     print(f"  {pepper}")
     print("\n⚠️  IMPORTANT SECURITY NOTES:")
-    print("  1. Add this to your .env file as: PASSWORD_PEPPER={pepper}")
+    print(f"  1. Add this to your .env file as: PASSWORD_PEPPER={pepper}")
     print("  2. NEVER commit this to version control")
     print("  3. Keep this secret - treat it like a private key")
     print("  4. Store backups in a secure key management system")
