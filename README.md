@@ -30,13 +30,13 @@ Important branches require reviews before merging to prevent unwanted changes.
 
 ## ✨ Features
 
-* Password Hash, Salt & Pepper
+* Password Hash, Salt
 * Utilize Argon2id
 * 1 man DevSecOps
 
 ## 🚀 Getting Started
 
-- 🔭 I’m currently working on... 3 personal apps with genAI, 2 websites, and a raspberry pi powered automatic fish feeder (that is also my private home server).
+- 🔭 I’m currently working on... 3 personal apps with genAI, 2 websites, a RazzPiFeeder(feed_fish) && a couple other network related pi-fi-trys
 - 🌱 I’m currently learning ...genAI Leaders / Cyber Security courses by Google, Python, HTML, PHP, and 3d printers.
 - 👯 I’m looking to collaborate on ...small projects centered around security features and fun D.I.Y. projects.
 - 🤔 I’m looking for help with ...sound advice for a 40 y.o. man changing carreers at a time like this.
