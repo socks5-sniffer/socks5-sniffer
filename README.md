@@ -3,19 +3,8 @@
 
 **socks5-sniffer/socks5-sniffer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-# 🏗️ After an exhausting career in military and construction, I am hanging my tool belt up for some lumbar support and a cool coffee mug.  
 
-Newly budding developer with an interest in security.  I started out curious on how passwords were salted/ hashed and...well I kept reading.  
-
-genAI is helping me through the giant hurdles that held me back from learning to code before, and I am so thankful for it.  
-
-Reach out and let me know what I am doing wrong and I will thank you big!
-
-
-
-## 🔒 Never-Change Security Notes
-
-My projects will generally focus on access control, API Security, and Data Protection.  Other security practices executed to keep the code safe and stable include:
+My focus other than fun projects will generally revolve around access control, API Security, and Data Protection.  Other security practices executed to keep the code safe and stable include:
 
 Safe Input Handling:
 All user input is checked and sanitized. For example, database queries use prepared statements to avoid SQL injection.
