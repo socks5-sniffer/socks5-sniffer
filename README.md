@@ -1,6 +1,5 @@
-# Hi there, I'm an Aspiring Solutions Architect 👋
+# Hi there, 👋
 
-I am a technical integrator and aspiring **Solutions Architect** focused on bridging the gap between business needs and deployed infrastructure.
 
 I specialize in **AI-Augmented Engineering**—utilizing Generative AI to rapidly prototype, secure, and deploy applications without getting bogged down in syntax. My workflow prioritizes **architecture, security, and speed**.
 
