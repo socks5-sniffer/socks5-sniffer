@@ -1,6 +1,5 @@
 # Hi there, 👋
 
-
 I specialize in **AI-Augmented Engineering**—utilizing Generative AI to rapidly prototype, secure, and deploy applications without getting bogged down in syntax. My workflow prioritizes **architecture, security, and speed**.
 
 Most recently, I have moved from standard web development to **Enterprise Linux** and **Containerization**, successfully deploying containerized applications to the **Red Hat OpenShift** environment.
@@ -12,7 +11,7 @@ I am aggressively upskilling to transition into the Red Hat ecosystem.
 * **Infrastructure:** Deploying ephemeral pods and services in the **Red Hat Developer Sandbox**.
 * **Orchestration:** Moving from local hosting to understanding Kubernetes/OpenShift architecture.
 * **Philosophy:** Adopting the "Upstream First" and Open Source mindset.
-
+![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true)
 ---
 
 ## 🛠️ Tech Stack & Toolkit
