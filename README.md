@@ -7,7 +7,6 @@ I am a **Cloud-Native Developer** bridging the gap between modern web frameworks
 ---
 
 ## 🚀 Featured Project: Faithville
-**Status:** [Live in Production](https://faithville.roedhousestudios.com) 🟢
 
 A full-stack strategy simulation game built to demonstrate secure data handling, real-time database interactions, and responsive UI/UX.
 * **Architecture:** Hybrid Cloud (Hostinger Frontend + Google Cloud Run Backend).
