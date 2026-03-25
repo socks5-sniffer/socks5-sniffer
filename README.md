@@ -1,61 +1,127 @@
 # Hi there, 👋
 
-I specialize in **AI-Augmented Engineering**—utilizing Generative AI to rapidly prototype, secure, and ship production-grade applications. My workflow prioritizes **architecture, security, and speed**, moving from concept to deployment in days, not months.
+I build **AI-Accelerated, Security-First Applications** using Python and cloud-native tools.
 
-I am a **Cloud-Native Developer** bridging the gap between modern web frameworks (React/Next.js) and Enterprise Infrastructure (Linux/Red Hat).
+My focus is simple:
+- ⚡ Ship quick using **AI-assisted development**
+- 🔐 Build with **security in mind from day one**
+- ☁️ Deploy and run in **real cloud environments (GCP)**
 
----
-
-## 🚀 Featured Project: Faithville
-
-A full-stack strategy simulation game built to demonstrate secure data handling, real-time database interactions, and responsive UI/UX.
-* **Architecture:** Hybrid Cloud (Hostinger Frontend + Google Cloud Run Backend).
-* **Stack:** React (TypeScript), Python, Firestore (NoSQL).
-* **Key Features:** Secure Authentication (OAuth), "Pessimistic UI" logic for transaction security, and cross-site portfolio integration.
+I’m currently focused on becoming a **strong Python engineer with real-world cloud deployment experience**.
 
 ---
 
-## 🎯 Current Focus: Enterprise & Cloud Architecture
-While I build in the cloud, my career trajectory is aimed at the **Red Hat Ecosystem**.
-* **Infrastructure:** Managing containerized workloads and ephemeral services.
-* **Security:** Implementing "Secure by Design" principles (CORS, Strict Transport Security, Input Sanitization).
-* **Goal:** Transitioning full-stack development skills into **OpenShift** orchestration and Enterprise Linux Administration.
+## 🥒 🚀 Featured Project: PicklePi
 
-![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true)
+**PicklePi** is my primary project—built to reflect how I actually develop:
+
+- rapid iteration using AI
+- backend-first thinking with Python
+- real deployment, not just local demos
+
+**Highlights:**
+- **Backend:** Python-based services (Flask/FastAPI direction)
+- **Cloud:** Google Cloud Platform (Cloud Run / Firebase ecosystem)
+- **Focus:** Clean architecture, security, and iteration speed
+- **Approach:** Build → test → deploy → refine
+
+> This project represents my current growth: becoming highly effective with Python while shipping real applications.
 
 ---
 
-## 🛠️ Tech Stack & Toolkit
+## 🎮 Secondary Project: Faithville
+
+A full-stack simulation project exploring UI, state, and secure interactions.
+
+* **Architecture:** Hostinger (frontend) + Google Cloud Run (backend)  
+* **Stack:** React (TypeScript), Python, Firestore  
+* **Key Features:**
+  - OAuth authentication  
+  - Secure transaction handling ("pessimistic UI")  
+  - Real-time database interactions  
+
+---
+
+## 🎯 Current Focus
+
+Right now I’m intentionally focused on **mastering fundamentals that scale**:
+
+* 🐍 **Python Development**
+  - Backend design
+  - APIs and data handling
+  - Writing clean, maintainable code
+
+* ☁️ **Google Cloud Platform (GCP)**
+  - Cloud Run deployments  
+  - Firestore and serverless patterns  
+  - Environment configuration and debugging  
+
+* 🔐 **Security Basics (Applied)**
+  - Input validation  
+  - CORS and API protection  
+  - Secrets management  
+
+---
+
+## 🧪 Exposure & Exploration
+
+I’ve also begun exploring:
+
+- 🐳 Containers (Docker basics)  
+- ☸️ Kubernetes concepts  
+- 🔴 OpenShift (deployed a working app accessible on the public internet)
+
+> Not my focus yet—but I understand the direction and have hands-on exposure.
+
+---
+
+## 🛠️ Tech Stack
 
 | Category | Tools |
 | :--- | :--- |
-| **Frontend** | **React**, **TypeScript**, **Next.js**, Tailwind CSS |
-| **Backend** | **Python** (Flask/FastAPI), Google Cloud Run, PHP |
-| **Database** | **Firebase (Firestore)**, PostgreSQL |
-| **Infrastructure** | **Red Hat Enterprise Linux (RHEL)**, Docker, Hostinger, Cloudflare |
-| **Security** | OAuth 2.0, Environment Parity, Dependency Scanning |
+| **Languages** | Python, JavaScript, TypeScript, HTML |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **Backend** | Flask / FastAPI (learning & building) |
+| **Cloud** | Google Cloud Platform (Cloud Run, Firebase) OpenShift | 
+| **Database** | Firestore, PostgreSQL |
+| **Tools** | Git, Docker (basics), Cloudflare, VSCode, Virtual Machines |
 
 ---
 
-## 🛡️ Security-First Methodology
-Even in rapid prototyping, I adhere to strict security practices:
-* **Zero Trust:** "Never trust the client." All transactions are verified server-side.
-* **Secrets Management:** API keys and Service Accounts are strictly managed via Environment Variables (`.env`).
-* **Traffic Control:** Strict CORS policies and HTTPS-only transport.
+## 🛡️ Security Mindset
+
+Even while learning, I build with intent:
+
+- Never trust client input  
+- Keep secrets out of code (`.env`)  
+- Validate everything server-side  
+- Prefer simple, secure patterns over clever ones  
 
 ---
 
 ## 🌱 About Me
 
-- 🔭 **I’m currently working on:**
-    - Scaling the "Faithville" ecosystem with mobile-first design.
-    - integrating "God Mode" admin panels for real-time application management.
-    - Deepening my knowledge of **Kubernetes** concepts via practical deployment.
-- 🎓 **I’m currently learning:**
-    - Google Cybersecurity Professional Certificate path.
-    - Advanced Linux System Administration.
-- 🤝 **I’m looking to collaborate on:**
-    - Open Source projects requiring documentation or security testing.
-    - Community initiatives involving Red Hat/Fedora.
-- ⚡ **Fun fact:** I share my home with **17 animals** (Ask me about the zoo!).
-- 💬 **The Real Talk:** I am a 40-year-old career switcher using modern tools (AI) to learn at 10x speed. I believe experience is valuable, but adaptability is vital.
+- 🔭 **Currently working on:**
+  - Growing **PicklePi** into a solid Python-based platform  
+  - Improving backend structure and API design  
+  - Getting more consistent with cloud deployments  
+
+- 🎓 **Currently learning:**
+  - Python (deeper fundamentals + best practices)  
+  - GCP services and architecture  
+  - Practical security  
+
+- 🤝 **Looking to collaborate on:**
+  - Beginner-friendly Python or backend projects  
+  - Open source where I can contribute and learn  
+
+- ⚡ **Fun fact:** I share my home with **17 animals** 🐾  
+
+- 💬 **The Real Talk:**
+  I’m a career switcher using AI to accelerate learning—but I focus on actually understanding what I build.
+
+  I’d rather be **solid at Python + cloud** than spread thin across everything.
+
+---
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true)
