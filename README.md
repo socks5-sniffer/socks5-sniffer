@@ -11,7 +11,7 @@ I’m currently focused on becoming a **strong Python engineer with real-world c
 
 ---
 
-## 🍽️ 🏃 Lead Project: Scrumptious
+## 🍽️ 🏃 Lead Project: Scrumptious (coming soon to public)
 
 **Scrumptious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
 
