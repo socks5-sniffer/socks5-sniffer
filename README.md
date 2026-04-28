@@ -41,13 +41,12 @@ Scrumptious formalizes the agile workflow behind PicklePi: sprint planning, back
 **PicklePi** is my primary build — the product Scrumptious plans and ships. It reflects how I actually develop: rapid iteration with AI, backend-first thinking, and real cloud deployments.
 
 **Description:**
-A Python-based platform built on Google Cloud, designed to grow incrementally through structured sprints managed by Scrumptious. PicklePi is where architectural decisions get made and real features land.
-
+picklePI is a full-stack, TypeScript educational platform designed to teach foundational Python through hardware-centric logic. Hosted on Google Cloud and managed via the SCRUMtious framework, it features a containerized execution environment that allows students to interact with Python code safely. The project serves as a live demonstration of "Secure by Design" principles, incorporating automated CI/CD security gates and rigorous input sanitization.
 **Stack:**
 
 | Category | Tools |
 | :--- | :--- |
-| **Language** | Python |
+| **Language** | TypeScript, Python |
 | **Backend** | Flask / FastAPI |
 | **Cloud** | Google Cloud Platform (Cloud Run, Firebase) |
 | **Database** | Firestore |
