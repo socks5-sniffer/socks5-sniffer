@@ -10,6 +10,31 @@ My focus is simple:
 I’m currently focused on becoming a **strong Python engineer with real-world cloud deployment experience**.
 
 ---
+## 🧠 Research Project: ARM-Protocol
+
+**ARM (Agent Reasoning Markup)** is a multi-agent reasoning transparency protocol. Instead of passing raw outputs between agents, ARM propagates full reasoning traces — assumptions, confidence levels, discarded paths, and decision basis — so downstream agents can audit and challenge logic rather than blindly inherit conclusions.
+
+**Description:**
+ARM runs questions through a structured four-agent cognitive mesh across two deliberation rounds. Round 1 agents reason in isolation; Round 2 agents receive compressed peer traces and must declare what specifically changed their position. A permanently-isolated γ-Silent agent provides a calibration anchor to detect **memetic drift** — when peer pressure inflates confidence without improving logic. 30+ experimental runs show ~85% of agent-rounds produce epistemic tightening (reduced confidence), not drift.
+
+**Stack:**
+
+| Category | Tools |
+| :--- | :--- |
+| **Frontend** | React (JSX), Vite |
+| **AI** | Claude (Anthropic), GPT-4o-mini, Gemini 2.5 Flash |
+| **Protocol** | Custom multi-agent JSON trace schema |
+| **Infra** | `.env` key management, JSON telemetry export |
+
+**Key Signals:**
+- 📉 Epistemic tightening dominant in ~85% of agent-rounds  
+- ⚠️ Memetic drift detected and flagged in ~10% of agent-rounds  
+- 🔁 γ-Silent baseline reproduces identical confidence scores across repeated runs  
+- 🔬 RLHF bias audit built into every reconciliation round  
+
+> ARM makes multi-agent reasoning auditable and measurable — replacing unearned consensus with verifiable epistemic signals.
+
+---
 
 ## 🍽️ 🏃 Lead Project: Scrumptious (coming soon to public)
 
@@ -36,7 +61,7 @@ Scrumptious formalizes the agile workflow behind PicklePi: sprint planning, back
 
 ---
 
-## 🥒 🚀 Featured Project: PicklePi
+## 🥒 🚀 Favorite Project: PicklePi
 
 **PicklePi** is my primary build — the product Scrumptious plans and ships. It reflects how I actually develop: rapid iteration with AI, backend-first thinking, and real cloud deployments.
 
