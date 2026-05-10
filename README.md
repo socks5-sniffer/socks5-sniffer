@@ -36,7 +36,7 @@ ARM runs questions through a structured four-agent cognitive mesh across two del
 
 ---
 
-## 🍽️ 🏃 Lead Project: Scrumptious
+## 🍽️ 🏃 Lead Project: SCRUMtious
 
 **SCRUMtious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
 
