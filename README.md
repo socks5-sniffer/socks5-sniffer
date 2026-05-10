@@ -117,6 +117,10 @@ Faithville simulates game-like transactions and state with a focus on security a
 
 ---
 
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true)
+
+---
+
 ## 🎯 Current Focus
 
 Right now I’m intentionally focused on **mastering fundamentals that scale**:
