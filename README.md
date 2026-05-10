@@ -10,7 +10,7 @@ My focus is simple:
 I’m currently focused on becoming a **strong Python engineer with real-world cloud deployment experience**.
 
 ---
-## 🧠 Research Project: ARM-Protocol
+## 🧠 Research Project: ARM-Protocol (release coming soon)
 
 **ARM (Agent Reasoning Markup)** is a multi-agent reasoning transparency protocol. Instead of passing raw outputs between agents, ARM propagates full reasoning traces — assumptions, confidence levels, discarded paths, and decision basis — so downstream agents can audit and challenge logic rather than blindly inherit conclusions.
 
@@ -36,7 +36,7 @@ ARM runs questions through a structured four-agent cognitive mesh across two del
 
 ---
 
-## 🍽️ 🏃 Lead Project: Scrumptious (coming soon to public)
+## 🍽️ 🏃 Lead Project: Scrumptious
 
 **Scrumptious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
 
