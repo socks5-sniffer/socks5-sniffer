@@ -41,7 +41,7 @@ ARM runs questions through a structured four-agent cognitive mesh across two del
 **SCRUMtious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
 
 **Description:**
-Scrumptious formalizes the agile workflow behind PicklePi: sprint planning, backlog grooming, and continuous delivery. It exists to make sure AI-accelerated development doesn't become chaotic — structure meets speed.
+SCRUMtious formalizes the agile workflow behind PicklePi: sprint planning, backlog grooming, and continuous delivery. It exists to make sure AI-accelerated development doesn't become chaotic — structure meets speed.
 
 **Stack:**
 
@@ -57,13 +57,13 @@ Scrumptious formalizes the agile workflow behind PicklePi: sprint planning, back
 - 🔁 Automated issue tracking tied to commits  
 - 📋 Milestone-driven release workflow  
 
-> Scrumptious keeps PicklePi honest — every feature ships through a sprint, every sprint ships through a pipeline.
+> SCRUMtious keeps PicklePi honest — every feature ships through a sprint, every sprint ships through a pipeline.
 
 ---
 
 ## 🥒 🚀 Favorite Project: PicklePi
 
-**PicklePi** is my primary build — the product Scrumptious plans and ships. It reflects how I actually develop: rapid iteration with AI, backend-first thinking, and real cloud deployments.
+**PicklePi** is my primary build — the product SCRUMtious plans and ships. It reflects how I actually develop: rapid iteration with AI, backend-first thinking, and real cloud deployments.
 
 **Description:**
 picklePI is a full-stack, TypeScript educational platform designed to teach foundational Python through hardware-centric logic. Hosted on Google Cloud and managed via the SCRUMtious framework, it features a containerized execution environment that allows students to interact with Python code safely. The project serves as a live demonstration of "Secure by Design" principles, incorporating automated CI/CD security gates and rigorous input sanitization.
