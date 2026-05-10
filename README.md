@@ -38,7 +38,7 @@ ARM runs questions through a structured four-agent cognitive mesh across two del
 
 ## 🍽️ 🏃 Lead Project: Scrumptious
 
-**Scrumptious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
+**SCRUMtious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
 
 **Description:**
 Scrumptious formalizes the agile workflow behind PicklePi: sprint planning, backlog grooming, and continuous delivery. It exists to make sure AI-accelerated development doesn't become chaotic — structure meets speed.
