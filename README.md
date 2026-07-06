@@ -1,13 +1,4 @@
-# Hi there, 👋
 
-I build **AI-Accelerated, Security-First Applications** using Python and cloud-native tools.
-
-My focus is simple:
-- ⚡ Ship quick using **AI-assisted development**
-- 🔐 Build with **security in mind from day one**
-- ☁️ Deploy and run in **real cloud environments (GCP)**
-
-I’m currently focused on becoming a **strong Python engineer with real-world cloud deployment experience**.
 
 ---
 ## 🧠 Research Project: ARM-Protocol (release coming soon)
