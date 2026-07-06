@@ -1,7 +1,7 @@
 
 
 ---
-## 🧠 Research Project: ARM-Protocol (release coming soon)
+## 🧠 Research Project: ARM-Protocol
 
 **ARM (Agent Reasoning Markup)** is a multi-agent reasoning transparency protocol. Instead of passing raw outputs between agents, ARM propagates full reasoning traces — assumptions, confidence levels, discarded paths, and decision basis — so downstream agents can audit and challenge logic rather than blindly inherit conclusions.
 
