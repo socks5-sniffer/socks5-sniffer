@@ -1,147 +1,131 @@
+<div align="center">
 
+# socks5-sniffer
+
+**I build AI systems that have to prove they work — and I publish the results when they don't.**
+
+Multi-agent reasoning research · agent-orchestrated delivery · hands-on STEM education
+
+</div>
 
 ---
-## 🧠 Research Project: ARM-Protocol
 
-**ARM (Agent Reasoning Markup)** is a multi-agent reasoning transparency protocol. Instead of passing raw outputs between agents, ARM propagates full reasoning traces — assumptions, confidence levels, discarded paths, and decision basis — so downstream agents can audit and challenge logic rather than blindly inherit conclusions.
+## 🧠 ARM-Protocol — Agent Reasoning Markup
 
-**Description:**
-ARM runs questions through a structured four-agent cognitive mesh across two deliberation rounds. Round 1 agents reason in isolation; Round 2 agents receive compressed peer traces and must declare what specifically changed their position. A permanently-isolated γ-Silent agent provides a calibration anchor to detect **memetic drift** — when peer pressure inflates confidence without improving logic. 30+ experimental runs show ~85% of agent-rounds produce epistemic tightening (reduced confidence), not drift.
+> **Research.** Making multi-agent reasoning auditable instead of merely agreeable.
+
+Most multi-agent systems pass **conclusions** between agents like text messages, discarding the reasoning that produced them. **ARM** propagates the full trace — assumptions, discarded alternatives, confidence, decision basis — so a downstream agent can audit and challenge the logic instead of inheriting it blind.
+
+**How it works:** every question runs through a four-agent cognitive mesh across two rounds. Round 1 agents reason in complete isolation. Round 2 agents receive compressed peer traces and must declare *what specifically* moved them. A permanently-isolated **γ-Silent** agent — a second independent draw that peers never see — acts as consensus co-witness and calibration anchor.
+
+The research target is the **Persuasion Duality**: sharing reasoning makes an agent auditable *and* makes it more persuasive, so a plausible-but-wrong assumption can propagate into baseless consensus — **memetic drift**.
 
 **Stack:**
 
 | Category | Tools |
 | :--- | :--- |
-| **Frontend** | React (JSX), Vite |
-| **AI** | Claude (Anthropic), GPT-4o-mini, Gemini 2.5 Flash |
+| **Frontend** | React 18, Vite |
+| **Models** | `claude-sonnet-4-6` · `gpt-5.5` · `gemini-3.5-flash` (any provider in any agent slot) |
 | **Protocol** | Custom multi-agent JSON trace schema |
-| **Infra** | `.env` key management, JSON telemetry export |
+| **Deploy** | Containerfile + OpenShift manifests (deployment, service, route, PVC), devfile |
+| **CI** | GitHub Actions CI + OWASP security scan |
 
-**Key Signals:**
-- 📉 Epistemic tightening dominant in ~85% of agent-rounds  
-- ⚠️ Memetic drift detected and flagged in ~10% of agent-rounds  
-- 🔁 γ-Silent baseline reproduces identical confidence scores across repeated runs  
-- 🔬 RLHF bias audit built into every reconciliation round  
+**Where it actually stands (2026-07):**
+- ❌ **The original drift detector was falsified.** A ground-truthed injection experiment (`experiments/c1vc2/`) shows confidence-magnitude drift separates contaminated from clean subjects at **chance — within-Gemini AUC ≈ 0.48**.
+- ✅ **IPR (injection-propagation rate)** — did an agent *adopt* a premise authored as false? — is the surviving, falsifiable signal.
+- ⚠️ The polarity gate's firm yes↔no transition class catches ~36% of inferred contaminations at 40% precision.
+- 🔬 RLHF bias audit runs in every reconciliation round.
 
-> ARM makes multi-agent reasoning auditable and measurable — replacing unearned consensus with verifiable epistemic signals.
+> I ran the direct test of my own central claim and it failed. That result is in the README, not buried — a metric that can't be falsified isn't a metric.
+
+**[→ socks5-sniffer/ARM-Protocol](https://github.com/socks5-sniffer/ARM-Protocol)** · Apache-2.0
 
 ---
 
-## 🍽️ 🏃 Lead Project: SCRUMtious
+## 🤖 SCRUMtious — AI-Powered Scrum Team Orchestration
 
-**SCRUMtious** is my Scrum team — the engine that drives how **PicklePi** gets built. It's where planning, sprints, and iteration strategy live, keeping development organized and moving forward with intention.
+> **Lead project.** One feature idea in, a full sprint cycle out.
 
-**Description:**
-SCRUMtious formalizes the agile workflow behind PicklePi: sprint planning, backlog grooming, and continuous delivery. It exists to make sure AI-accelerated development doesn't become chaotic — structure meets speed.
+**SCRUMtious** is a standalone web application that drives five specialised AI agents through a complete Agile sprint. Describe a feature in plain English; get back a requirements doc, user story, implementation, OWASP security audit, and sprint retrospective as a downloadable artifact bundle.
+
+**The pipeline:** 📋 Business Analyst → 🎯 Product Owner → ⚡ Lead Developer → 🛡️ Security Auditor → 🔄 Scrum Master. Each agent builds on the last, streams live to the UI, and **pauses for you** — a human-in-the-loop approval gate after every stage lets you read, edit, and approve before the sprint continues.
 
 **Stack:**
 
 | Category | Tools |
 | :--- | :--- |
-| **Project Mgmt** | GitHub Projects, Issues, Milestones |
-| **Process** | Scrum (sprints, backlog, retrospectives) |
-| **Automation** | GitHub Actions (CI/CD pipelines) |
-| **Docs** | Markdown, GitHub Wiki |
+| **Backend** | FastAPI, Python 3.11+ |
+| **AI** | CrewAI, Google Gemini |
+| **Realtime** | Server-Sent Events (background thread + event queue) |
+| **Frontend** | Vanilla JS single-page UI — no framework |
+| **Export** | Markdown bundle, PDF (xhtml2pdf) |
+| **CI** | GitHub Actions CI · CodeQL · OWASP Top-10 scan |
 
-**Pipelines:**
-- ✅ Sprint-gated CI checks on every PR  
-- 🔁 Automated issue tracking tied to commits  
-- 📋 Milestone-driven release workflow  
+**Key signals:**
+- ⏸️ HITL approval gate between every agent — edits are re-emitted into the stream
+- 🔐 Per-session tokens on protected endpoints via HttpOnly cookie
+- 💾 Sessions persist to disk and reload into memory on startup
+- 🛡️ Security Auditor emits an explicit `APPROVED` / `BLOCKED` verdict
 
-> SCRUMtious keeps PicklePi honest — every feature ships through a sprint, every sprint ships through a pipeline.
+> The interesting problem wasn't the agents — it was making an async event loop, a blocking crew thread, and a human who needs to read the output all cooperate.
 
----
-
-## 🥒 🚀 Favorite Project: PicklePi
-
-**PicklePi** is my primary build — the product SCRUMtious plans and ships. It reflects how I actually develop: rapid iteration with AI, backend-first thinking, and real cloud deployments.
-
-**Description:**
-picklePI is a full-stack, TypeScript educational platform designed to teach foundational Python through hardware-centric logic. Hosted on Google Cloud and managed via the SCRUMtious framework, it features a containerized execution environment that allows students to interact with Python code safely. The project serves as a live demonstration of "Secure by Design" principles, incorporating automated CI/CD security gates and rigorous input sanitization.
-**Stack:**
-
-| Category | Tools |
-| :--- | :--- |
-| **Language** | TypeScript, Python |
-| **Backend** | Flask / FastAPI |
-| **Cloud** | Google Cloud Platform (Cloud Run, Firebase) |
-| **Database** | Firestore |
-| **Infra** | Docker, Cloud Run, `.env` secrets management |
-
-**Pipelines:**
-- 🐍 Python linting + unit tests on every push  
-- ☁️ Cloud Run deploy on merge to main  
-- 🔐 Secret scanning and environment validation  
-- 🔁 Sprint-linked CI managed through Scrumptious  
-
-> PicklePi represents my current growth: becoming highly effective with Python while shipping real, deployed applications — one sprint at a time.
+**[→ socks5-sniffer/SCRUMtious](https://github.com/socks5-sniffer/SCRUMtious)** · MIT
 
 ---
 
-## 🎮 Project: Faithville
+## 🥒 picklePi — Electronics & Python, One Circuit at a Time
 
-A full-stack simulation project exploring UI, state management, and secure user interactions. A different flavor from PicklePi — heavier on the frontend, testing different architectural patterns.
+> **Favorite project.** Teaching the thing I had to learn myself.
 
-**Description:**
-Faithville simulates game-like transactions and state with a focus on security and real-time data. It runs across two cloud providers, testing how a split frontend/backend architecture holds up in production.
+**picklePi** is a gamified, project-based platform that teaches electronics and Python on the Raspberry Pi across **13 sequenced levels** — from a first LED blink to a working physical tamper-monitoring security system. No prior experience assumed.
+
+Every level is a full lesson, not a snippet: wiring instructions with safety warnings, complete runnable code, line-by-line walkthroughs, concept deep dives, experiment challenges, and troubleshooting. Badges unlock as you go, and a Lab Notebook captures reflection on each build.
 
 **Stack:**
 
 | Category | Tools |
 | :--- | :--- |
-| **Frontend** | React (TypeScript), Tailwind CSS |
-| **Backend** | Python |
-| **Cloud** | Hostinger (frontend) + Google Cloud Run (backend) |
-| **Database** | Firestore |
-| **Auth** | OAuth |
+| **Frontend** | React 19, TypeScript 6, Vite 8, Tailwind 4, Motion |
+| **Backend** | Flask + Firebase Admin (Firestore), `bleach` sanitisation |
+| **Optional persistence** | Express 5 + better-sqlite3 (client-first by default) |
+| **AI** | `@google/genai` — Gemini-driven curriculum level generator |
+| **Deploy** | Vercel, with a full CSP + security-header policy in `vercel.json` |
+| **CI** | GitHub Actions CI · CodeQL · OWASP scan · wiki sync |
 
-**Pipelines:**
-- ⚛️ React build + type-check on every PR  
-- ☁️ Backend deploy to Cloud Run on merge  
-- 🔐 OAuth flow validation and CORS enforcement  
-- 🌐 Frontend deploy to Hostinger on release  
+**Key signals:**
+- 🔒 Every `/api/progress` route requires a verified Firebase ID token — and the URL's `userId` must match the uid *inside* that token, so no user can ever read another's data
+- 🧱 Strict CSP, `frame-ancestors 'none'`, and HSTS preload shipped in config
+- 🎮 Client-first architecture — runs with zero backend; server-side accounts are drop-in
+- 📓 Lab Notebook, badge system, and an interactive GPIO pinout reference
 
-**Key Features:**
-  - OAuth authentication  
-  - Secure transaction handling ("pessimistic UI")  
-  - Real-time database interactions  
+**[→ socks5-sniffer/picklePi](https://github.com/socks5-sniffer/picklePi)** · MIT
 
 ---
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true)
+## 📊 GitHub Activity
 
----
+<div align="center">
 
-## 🎯 Current Focus
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=socks5-sniffer&show_icons=true&hide_border=true&include_all_commits=true&theme=github_dark&title_color=5bcdec&icon_color=5bcdec&bg_color=0d1117">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=socks5-sniffer&show_icons=true&hide_border=true&include_all_commits=true&title_color=1f6feb&icon_color=1f6feb" alt="GitHub stats">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=socks5-sniffer&layout=compact&hide_border=true&langs_count=8&theme=github_dark&title_color=5bcdec&bg_color=0d1117">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=socks5-sniffer&layout=compact&hide_border=true&langs_count=8&title_color=1f6feb" alt="Top languages">
+</picture>
 
-Right now I’m intentionally focused on **mastering fundamentals that scale**:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=ffffff&color=1f6feb&line=1f6feb&point=1f6feb&area=true&hide_border=true" alt="Contribution activity graph">
+</picture>
 
-* 🐍 **Python Development**
-  - Backend design
-  - APIs and data handling
-  - Writing clean, maintainable code
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/socks5-sniffer/socks5-sniffer/output/github-contribution-grid-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/socks5-sniffer/socks5-sniffer/output/github-contribution-grid-snake.svg" alt="Contribution grid snake animation">
+</picture>
 
-* ☁️ **Google Cloud Platform (GCP)**
-  - Cloud Run deployments  
-  - Firestore and serverless patterns  
-  - Environment configuration and debugging  
-
-* 🔐 **Security Basics (Applied)**
-  - Input validation  
-  - CORS and API protection  
-  - Secrets management  
-
----
-
-## 🧪 Exposure & Exploration
-
-I’ve also begun exploring:
-
-- 🐳 Containers (Docker basics)  
-- ☸️ Kubernetes concepts  
-- 🔴 OpenShift (deployed a working app accessible on the public internet)
-
-> Not my focus yet—but I understand the direction and have hands-on exposure.
+</div>
 
 ---
 
@@ -149,49 +133,37 @@ I’ve also begun exploring:
 
 | Category | Tools |
 | :--- | :--- |
-| **Languages** | Python, JavaScript, TypeScript, HTML |
-| **Frontend** | React, Next.js, Tailwind CSS |
-| **Backend** | Flask / FastAPI (learning & building) |
-| **Cloud** | Google Cloud Platform (Cloud Run, Firebase) OpenShift | 
-| **Database** | Firestore, PostgreSQL |
-| **Tools** | Git, Docker (basics), Cloudflare, VSCode, Virtual Machines |
+| **Languages** | Python, TypeScript, JavaScript, HTML/CSS |
+| **Frontend** | React, Vite, Tailwind CSS |
+| **Backend** | FastAPI, Flask, Express |
+| **AI** | CrewAI, Anthropic Claude, Google Gemini, OpenAI |
+| **Cloud** | Google Cloud, Firebase/Firestore, Vercel, OpenShift |
+| **Data** | Firestore, SQLite, PostgreSQL |
+| **Tooling** | Git, GitHub Actions, Docker/Podman, CodeQL, Cloudflare |
 
 ---
 
-## 🛡️ Security Mindset
+## 🎯 Current Focus
 
-Even while learning, I build with intent:
-
-- Never trust client input  
-- Keep secrets out of code (`.env`)  
-- Validate everything server-side  
-- Prefer simple, secure patterns over clever ones  
+* 🧪 **Multi-agent evaluation** — designing experiments that can actually falsify a protocol's claims, not just demo it
+* 🐍 **Python depth** — backend structure, API design, clean and maintainable code
+* ☁️ **Deployment reality** — Cloud Run, Vercel, and OpenShift, from container to public HTTPS route
+* 🔐 **Applied security** — input validation, authz that survives a hostile URL, CSP and secrets hygiene
 
 ---
 
-## 🌱 About Me
+## 🛡️ How I Build
 
-- 🔭 **Currently working on:**
-  - Growing **PicklePi** into a solid Python-based platform  
-  - Improving backend structure and API design  
-  - Getting more consistent with cloud deployments  
-
-- 🎓 **Currently learning:**
-  - Python (deeper fundamentals + best practices)  
-  - GCP services and architecture  
-  - Practical security  
-
-- 🤝 **Looking to collaborate on:**
-  - Beginner-friendly Python or backend projects  
-  - Open source where I can contribute and learn  
-
-- ⚡ **Fun fact:** I share my home with **17 animals** 🐾  
-
-- 💬 **The Real Talk:**
-  I’m a career switcher using AI to accelerate learning—but I focus on actually understanding what I build.
-
-  I’d rather be **solid at Python + cloud** than spread thin across everything.
+- Never trust client input — validate server-side, every time
+- Secrets stay out of code
+- Prefer simple, secure patterns over clever ones
+- Publish the negative result — a claim you can't falsify isn't a finding
 
 ---
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=socks5-sniffer&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true)
+## 🌱 About
+
+I'm a career switcher using AI to accelerate learning, but the point is understanding what I build. I'd rather be genuinely solid at Python, cloud, and evaluation than spread thin across everything.
+
+- 🤝 **Open to collaborating on:** multi-agent evaluation, beginner-friendly Python/backend projects, open source where I can contribute and learn
+- ⚡ **Fun fact:** I share my home with **17 animals** 🐾
