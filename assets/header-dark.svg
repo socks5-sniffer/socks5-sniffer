@@ -1,21 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="332" viewBox="0 0 900 332" role="img" aria-label="socks5-sniffer terminal banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="590" viewBox="0 0 1100 590" role="img" aria-label="Terminal profile for Erik Roed">
   <style>
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 17px; fill: #e6edf3; }
-    .l { opacity: 0; animation: in .45s ease-out forwards; }
-    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
-    .cur { animation: blink 1.1s step-end infinite; }
-    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 16px; fill: #e6edf3; }
   </style>
-  <rect x="1" y="1" width="898" height="330" rx="12" fill="#0d1117" stroke="#30363d"/>
-  <path d="M1 13a12 12 0 0 1 12-12h874a12 12 0 0 1 12 12v31H1z" fill="#161b22"/>
-  <line x1="1" y1="44" x2="899" y2="44" stroke="#30363d"/>
-  <circle cx="26" cy="23" r="6" fill="#ff5f57"/><circle cx="46" cy="23" r="6" fill="#febc2e"/><circle cx="66" cy="23" r="6" fill="#28c840"/>
-  <text x="450" y="28" text-anchor="middle" style="font-size:13px;fill:#8b949e">socks5-sniffer@lab: ~</text>
-  <text class="l" style="animation-delay:0.3s" x="40" y="92"><tspan fill="#bc8cff">~$</tspan> whoami</text>
-  <text class="l" style="animation-delay:0.9s" x="40" y="126"><tspan fill="#5bcdec" font-weight="700">socks5-sniffer</tspan> <tspan fill="#8b949e">— builds AI systems that have to prove they work</tspan></text>
-  <text class="l" style="animation-delay:1.7s" x="40" y="160"><tspan fill="#bc8cff">~$</tspan> cat focus.txt</text>
-  <text class="l" style="animation-delay:2.3s" x="40" y="194">multi-agent evaluation <tspan fill="#8b949e">·</tspan> DevSecOps <tspan fill="#8b949e">·</tspan> cloud-native <tspan fill="#8b949e">·</tspan> hardware on the bench</text>
-  <text class="l" style="animation-delay:3.1s" x="40" y="228"><tspan fill="#bc8cff">~$</tspan> ./run-experiment --publish-results=always</text>
-  <text class="l" style="animation-delay:3.8s" x="40" y="262"><tspan fill="#d29922">✗ hypothesis falsified</tspan> <tspan fill="#8b949e">(AUC ≈ 0.48)</tspan>  <tspan fill="#3fb950">✓ result published anyway</tspan></text>
-  <text class="cur" x="40" y="296"><tspan fill="#bc8cff">~$</tspan> <tspan fill="#5bcdec">▍</tspan></text>
+  <rect x="1" y="1" width="1098" height="588" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M1 13a12 12 0 0 1 12-12h1074a12 12 0 0 1 12 12v35H1z" fill="#161b22"/>
+  <line x1="1" y1="48" x2="1099" y2="48" stroke="#30363d"/>
+  <circle cx="26" cy="25" r="6" fill="#ff5f57"/><circle cx="46" cy="25" r="6" fill="#febc2e"/><circle cx="66" cy="25" r="6" fill="#28c840"/>
+  <text x="550" y="30" text-anchor="middle" style="font-size:13px;fill:#8b949e">erik-roed@profile: ~</text>
+  <text x="38" y="91"><tspan fill="#bc8cff">~$</tspan> cat profile.json</text>
+  <text x="38" y="128" fill="#8b949e">{</text>
+  <text x="62" y="160"><tspan fill="#79c0ff">"name"</tspan>: <tspan fill="#a5d6a7">"Erik Roed"</tspan>,</text>
+  <text x="62" y="192"><tspan fill="#79c0ff">"role"</tspan>: <tspan fill="#a5d6a7">"Early-career software developer · U.S. Army Signal Corps veteran"</tspan>,</text>
+  <text x="62" y="224"><tspan fill="#79c0ff">"builds"</tspan>: [</text>
+  <text x="86" y="252" fill="#a5d6a7">"Practical software and connected systems with Python, JavaScript/TypeScript,",</text>
+  <text x="86" y="280" fill="#a5d6a7">"React, cloud platforms, and embedded hardware."</text>
+  <text x="62" y="308">],</text>
+  <text x="62" y="340"><tspan fill="#79c0ff">"background"</tspan>: [</text>
+  <text x="86" y="368" fill="#a5d6a7">"Army communications, construction project leadership, and technical education",</text>
+  <text x="86" y="396" fill="#a5d6a7">"— troubleshooting, coordination, and explaining complex systems."</text>
+  <text x="62" y="424">],</text>
+  <text x="62" y="456"><tspan fill="#79c0ff">"learning"</tspan>: [</text>
+  <text x="86" y="484" fill="#a5d6a7">"Build, deploy, debug; strengthen Python and explore embedded systems,",</text>
+  <text x="86" y="512" fill="#a5d6a7">"local language models, and deterministic safety rules."</text>
+  <text x="62" y="540">]</text>
+  <text x="38" y="568" fill="#8b949e">}</text>
 </svg>
