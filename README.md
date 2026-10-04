@@ -1,6 +1,6 @@
-# Erik Roed
 
-**Early-career software developer · U.S. Army Signal Corps veteran**
+
+**Early-career software developer · 
 
 I build practical software and connected systems with Python, JavaScript/TypeScript, React, cloud platforms, and embedded hardware. My path here runs through Army communications, construction project leadership, and technical education. Those roles taught me to troubleshoot under pressure, coordinate across specialties, and explain complex systems clearly.
 
