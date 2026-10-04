@@ -1,154 +1,93 @@
-<div align="center">
+# Erik Roed
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Terminal: whoami → socks5-sniffer, builds AI systems that have to prove they work. Hypothesis falsified (AUC ≈ 0.48), result published anyway.">
-</picture>
+**Early-career software developer · U.S. Army Signal Corps veteran**
 
-<br><br>
+I build practical software and connected systems with Python, JavaScript/TypeScript, React, cloud platforms, and embedded hardware. My path here runs through Army communications, construction project leadership, and technical education. Those roles taught me to troubleshoot under pressure, coordinate across specialties, and explain complex systems clearly.
 
-<img src="https://img.shields.io/badge/focus-multi--agent%20evaluation-5bcdec?style=flat-square" alt="focus: multi-agent evaluation">
-<img src="https://img.shields.io/badge/security-OWASP%20%C2%B7%20CodeQL%20in%20CI-3fb950?style=flat-square" alt="security: OWASP and CodeQL in CI">
-<img src="https://img.shields.io/badge/deploys%20to-OpenShift%20%C2%B7%20Vercel%20%C2%B7%20Cloud%20Run-ee0000?style=flat-square" alt="deploys to OpenShift, Vercel, Cloud Run">
-<img src="https://img.shields.io/badge/roommates-17%20animals-d29922?style=flat-square" alt="roommates: 17 animals">
+I learn by building, deploying, debugging, and understanding why a system behaves the way it does. I’m currently strengthening my Python skills and exploring how embedded controllers, local language models, and deterministic safety rules can work together.
 
-</div>
-
-```yaml
-# ~/.profile
-now:
-  researching:  "does sharing reasoning between agents make them auditable — or just more persuasive?"
-  building:     "AI tooling that shows its work, with a human in the loop"
-  learning:     "OpenShift from container to public route · ESP32 hardware · local LLM benchmarking"
-rules:
-  - never trust client input
-  - secrets stay out of code
-  - simple and secure beats clever
-  - publish the negative result
-```
-
-## 🔬 Featured work
+## Featured projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 [ARM-Protocol](https://github.com/socks5-sniffer/ARM-Protocol)
-**Agent Reasoning Markup** · research · Apache-2.0
+### 🤖 Autonomous ESP32 rover
 
-Agents pass full reasoning traces — assumptions, discarded alternatives, confidence — instead of bare conclusions, so peers can audit the logic rather than inherit it.
+Two controllers divide camera-based vision and motor control, with a shared message contract and sensor-based safety rules. Local language models are being explored for higher-level decisions while deterministic control retains authority over movement.
 
-Four-agent mesh, two rounds, plus a permanently isolated **γ-Silent** control agent. Any provider in any slot (Claude · GPT · Gemini).
-
-`React` `Vite` `OpenShift` `OWASP scan`
+<sub>In progress · Repository private for now</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 [SCRUMtious](https://github.com/socks5-sniffer/SCRUMtious)
-**One feature idea in, a full sprint out** · MIT
+### 🥒 [picklePi](https://github.com/socks5-sniffer/picklePi)
 
-Five AI agents — BA → PO → Dev → Security Auditor → Scrum Master — stream live to the UI, with a **human approval gate after every stage**. The auditor returns an explicit `APPROVED` / `BLOCKED`.
+A Raspberry Pi learning platform with 13 progressive hardware lessons, interactive progress tracking, and a searchable electronics glossary. Built with React and TypeScript, with Python and hardware learning at its center.
 
-`FastAPI` `CrewAI` `Gemini` `SSE` `CodeQL`
+<sub>React · TypeScript · Raspberry Pi</sub>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🥒 [picklePi](https://github.com/socks5-sniffer/picklePi)
-**Electronics + Python on the Raspberry Pi** · MIT
+### ☁️ Faithville
 
-13 levels, first LED blink → working tamper-monitoring security system. Full lessons, not snippets: wiring, safety, runnable code, line-by-line walkthroughs, badges, lab notebook.
+A full-stack application built with React/Vite and Flask, using Firestore and deployed on Google Cloud Run.
 
-`React 19` `TypeScript` `Flask` `Firebase` `strict CSP`
+<sub>Repository private for now · React/Vite · Flask · Google Cloud</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### ☁️ [learning-openshift](https://github.com/socks5-sniffer/learning-openshift)
-**Cloud-native, learned in public**
+### 🛠️ [SCRUMtious](https://github.com/socks5-sniffer/SCRUMtious)
 
-A Next.js app deployed to Red Hat OpenShift via Dev Spaces, with interactive Kubernetes tutorials. Documents the mistakes and fixes, not just the working build.
+A Python and CrewAI project exploring a staged, human-reviewed workflow with security checks at each step.
 
-`Next.js` `TypeScript` `OpenShift` `Kubernetes`
+<sub>Python · CrewAI · security automation</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🌐 [OpenShift learning](https://github.com/socks5-sniffer/learning-openshift)
+
+Hands-on work with containers, Kubernetes concepts, OpenShift builds, services, and routes.
+
+<sub>Next.js · Kubernetes · OpenShift</sub>
+
+</td>
+<td width="50%" valign="top">
+
+### 🧪 Local language model experiments
+
+Testing IBM Granite and other models with Ollama, including structured outputs, resource limits, and the boundary between model suggestions and deterministic control.
+
+<sub>In progress · Repository private for now</sub>
 
 </td>
 </tr>
 </table>
 
-## 📓 Lab notebook: the result that didn't work
+## What I’m working with
 
-> **Claim:** confidence-magnitude drift detects when a false premise has contaminated a multi-agent consensus.
->
-> **Test:** ground-truthed injection experiment ([`experiments/c1vc2/`](https://github.com/socks5-sniffer/ARM-Protocol)) — plant a known-false premise, check whether drift separates contaminated agents from clean ones.
->
-> **Result:** chance. Within-Gemini **AUC ≈ 0.48**. The detector is falsified.
+Python · JavaScript · TypeScript · React · Flask · REST APIs · Firestore · Google Cloud Run · OpenShift · Kubernetes · Docker · GitHub Actions · ESP32 · Raspberry Pi · Ollama
 
-What survived:
+I use AI tools as part of development, while keeping architecture, verification, and safety decisions grounded in working systems and human review.
 
-| Signal | Status |
-| :--- | :--- |
-| Confidence-magnitude drift | ❌ falsified — AUC ≈ 0.48 |
-| **IPR** — injection-propagation rate (did an agent *adopt* a premise authored as false?) | ✅ surviving, falsifiable |
-| Polarity gate, firm yes↔no transitions | ⚠️ catches ~36% of inferred contaminations at 40% precision |
-| RLHF bias audit | 🔬 runs every reconciliation round |
+## Background
 
-A metric that can't fail isn't a metric. So the failure goes in the README, not a footnote.
+Before software development, I operated and troubleshot secure communications systems in the U.S. Army, managed commercial construction projects, and taught technical subjects. I bring that experience in systems thinking, practical troubleshooting, and instruction to my software work. I’m especially interested in junior software development, cloud-native applications, embedded systems, and developer education.
 
-<details>
-<summary><b>🔐 Security details worth checking</b></summary>
-<br>
-
-- **picklePi** — every `/api/progress` route requires a verified Firebase ID token, *and* the URL's `userId` must match the uid inside that token. Changing the URL can't read someone else's data.
-- **picklePi** — strict CSP, `frame-ancestors 'none'`, HSTS preload, all shipped in `vercel.json`.
-- **SCRUMtious** — per-session tokens via HttpOnly cookie on protected endpoints; sessions persist to disk and reload on startup.
-- **All three flagship repos** — CodeQL and/or an OWASP scan run in GitHub Actions.
-
-</details>
-
-<details>
-<summary><b>🛠️ Full stack</b></summary>
-<br>
-
-| Category | Tools |
-| :--- | :--- |
-| **Languages** | Python, TypeScript, JavaScript, C/C++ (ESP32) |
-| **Frontend** | React, Next.js, Vite, Tailwind CSS |
-| **Backend** | FastAPI, Flask, Express |
-| **AI** | Anthropic Claude, Google Gemini, OpenAI, CrewAI, local LLMs |
-| **Cloud** | OpenShift, Google Cloud, Firebase, Vercel |
-| **Data** | Firestore, SQLite, PostgreSQL |
-| **Tooling** | Git, GitHub Actions, Docker/Podman, CodeQL, Cloudflare |
-| **Hardware** | Raspberry Pi, ESP32-S3 / C3 |
-
-</details>
-
-## 📊 Activity
+## Contribution activity
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=socks5-sniffer&show_icons=true&hide_border=true&include_all_commits=true&theme=github_dark&title_color=5bcdec&icon_color=5bcdec&bg_color=0d1117">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=socks5-sniffer&show_icons=true&hide_border=true&include_all_commits=true&title_color=0969da&icon_color=0969da" alt="GitHub stats">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=socks5-sniffer&layout=compact&hide_border=true&langs_count=8&theme=github_dark&title_color=5bcdec&bg_color=0d1117">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=socks5-sniffer&layout=compact&hide_border=true&langs_count=8&title_color=0969da" alt="Top languages">
-</picture>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/socks5-sniffer/socks5-sniffer/output/github-contribution-grid-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/socks5-sniffer/socks5-sniffer/output/github-contribution-grid-snake.svg" alt="Contribution grid snake animation">
+  <img src="https://raw.githubusercontent.com/socks5-sniffer/socks5-sniffer/output/github-contribution-grid-snake.svg" alt="Animated snake moving across my GitHub contribution graph">
 </picture>
 
 </div>
-
-## 🌱 About
-
-Career switcher. I use AI to learn faster, but the point is understanding what I ship — I'd rather be solid at Python, cloud, and evaluation than thin across everything.
-
-**Open to collaborating on** multi-agent evaluation, beginner-friendly Python/backend projects, and STEM education tooling.
-
-<div align="center"><sub>If a claim here doesn't hold up, open an issue. I'd rather know.</sub></div>
