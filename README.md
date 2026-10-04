@@ -1,6 +1,9 @@
+<div align="center">
 
-
-**Early-career software developer · 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" width="100%" alt="Terminal profile for Erik Roed: early-career software developer and U.S. Army Signal Corps veteran, building practical software and connected systems, with experience in communications, construction project leadership, and technical education.">
+</picture>
 
 </div>
 
