@@ -64,9 +64,9 @@ Hands-on work with containers, Kubernetes concepts, OpenShift builds, services, 
 
 ### 🧪 Local language model experiments
 
-Testing IBM Granite and other models with Ollama, including structured outputs, resource limits, and the boundary between model suggestions and deterministic control.
+[LocalBench](https://github.com/socks5-sniffer/localbench) is a local-first tool for understanding what AI workloads a computer can realistically support. I am also testing IBM Granite and other models with Ollama, including structured outputs, resource limits, and the boundary between model suggestions and deterministic control for the rover project.
 
-<sub>In progress · Repository private for now</sub>
+<sub>In progress · Rover benching repository private for now</sub>
 
 </td>
 </tr>
